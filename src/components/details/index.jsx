@@ -1,5 +1,9 @@
 import { MdLocationOn, MdMail } from 'react-icons/md';
-import { AiFillGithub, AiFillMediumSquare } from 'react-icons/ai';
+import {
+  AiFillGithub,
+  AiFillMediumSquare,
+  AiOutlineAlignCenter,
+} from 'react-icons/ai';
 import { SiTwitter } from 'react-icons/si';
 import { GrLinkedinOption } from 'react-icons/gr';
 import { CgDribbble } from 'react-icons/cg';
@@ -80,6 +84,7 @@ const Details = ({ profile, loading, social, github }) => {
                   icon={<FaBuilding className="mr-2" />}
                   title="Company:"
                   value={profile.company}
+                  link={`https://proxima.capital/`}
                 />
               )}
               <ListItem
@@ -126,6 +131,14 @@ const Details = ({ profile, loading, social, github }) => {
                   title="Facebook:"
                   value={social.facebook}
                   link={`https://www.facebook.com/${social.facebook}`}
+                />
+              )}
+              {typeof social.mirror !== 'undefined' && social.mirror && (
+                <ListItem
+                  icon={<AiOutlineAlignCenter className="mr-2" />}
+                  title="Mirror:"
+                  value={social.mirror}
+                  link={`https://mirror.xyz/${social.mirror}`}
                 />
               )}
               {typeof social.medium !== 'undefined' && social.medium && (

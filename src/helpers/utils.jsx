@@ -201,6 +201,11 @@ export const sanitizeConfig = (config) => {
         typeof config.social.behance !== 'undefined'
           ? config.social.behance
           : '',
+      mirror:
+        typeof config.social !== 'undefined' &&
+        typeof config.social.mirror !== 'undefined'
+          ? config.social.mirror
+          : '',
       medium:
         typeof config.social !== 'undefined' &&
         typeof config.social.medium !== 'undefined'

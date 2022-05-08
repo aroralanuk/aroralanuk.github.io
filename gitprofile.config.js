@@ -2,138 +2,101 @@
 
 const config = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (Required)
-    sortBy: 'stars', // stars | updated
-    limit: 10, // How many projects to display.
+    username: 'aroralanuk', // Your GitHub org/user name. (Required)
+    sortBy: 'updated', // stars | updated
+    limit: 6, // How many projects to display.
     exclude: {
       forks: false, // Forked projects will not be displayed if set to true.
-      projects: ['laravel-ecommerce'], // These projects will not be displayed. example: ['my-project1', 'my-project2']
+      projects: [
+        'Lab7_Starter',
+        'Lab5_Starter',
+        'Lab8_Starter',
+        'Lab9_Starter',
+        'aisle-temp',
+        'scaffold-eth-challenges',
+      ], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
+    linkedin: 'kunalarora01',
+    twitter: 'auroraByKunal',
     facebook: '',
     dribbble: '',
     behance: '',
-    medium: '',
-    dev: 'arifszn',
-    website: 'https://arifszn.github.io',
+    medium: 'auroraByKunal',
+    mirror: 'lanuk.eth',
+    dev: '',
+    website: 'https://aroralanuk.github.io/',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'crazentonkunalizar@gmail.com',
   },
   skills: [
-    'PHP',
-    'Laravel',
+    'Solidity',
+    'Python',
+    'C/C++',
     'JavaScript',
     'React.js',
     'Node.js',
     'MySQL',
     'Git',
     'Docker',
-    'CSS',
-    'Antd',
-    'Tailwind',
-    'Bootstrap',
+    'Flutter',
   ],
   experiences: [
     {
-      company: 'Monstarlab Bangladesh',
-      position: 'Backend Engineer II',
-      from: 'September 2021',
+      company: 'Proxima Capital',
+      position: 'Junior Solidity Developer',
+      from: 'March 2022',
       to: 'Present',
     },
     {
-      company: 'Orangetoolz',
-      position: 'Jr. Full Stack Engineer',
-      from: 'July 2019',
-      to: 'August 2021',
+      company: 'Blockchain at San Diego',
+      position: 'Co-founder and Vice President, Education',
+      from: 'July 2021',
+      to: 'Present',
     },
     {
-      company: 'Techvillage',
-      position: 'Jr. Software Engineer',
-      from: 'January 2019',
-      to: ' June 2019',
+      company: 'BlockLab',
+      position: 'Undergraduate Researcher',
+      from: 'October 2021',
+      to: 'Present',
     },
   ],
   education: [
     {
-      institution: 'American International University-Bangladesh',
-      degree: 'Bachelor of Science',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Cantonment College, Jessore',
-      degree: 'Higher Secondary Certificate (HSC)',
-      from: '2012',
-      to: '2014',
-    },
-    {
-      institution: 'Chowgacha Shahadat Pilot High School',
-      degree: 'Secondary School Certificate (SSC)',
-      from: '2007',
-      to: '2012',
+      institution: 'University of California, San Diego',
+      degree: 'Bachelor of Science in Mathematics and Computer Science',
+      from: '2019',
+      to: '2023',
     },
   ],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn',
-    limit: 3, // How many posts to display. Max is 10.
+    source: 'medium', // medium | dev
+    username: 'auroraByKunal',
+    limit: 10, // How many posts to display. Max is 10.
   },
   googleAnalytics: {
     // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-    id: 'G-WLLB5E14M6', // Please remove this and use your own tag id or keep it empty
+    id: 'G-MTJXK0YMZW', // Please remove this and use your own tag id or keep it empty
   },
   hotjar: {
     id: '2617601', //  Please remove this and use your own id or keep it empty
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'corporate',
+    defaultTheme: 'halloween',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: false,
 
     // Available themes. To remove any theme, exclude from here.
-    themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'procyon',
-    ],
+    themes: ['bumblebee', 'halloween'],
 
     // Custom theme
     customTheme: {

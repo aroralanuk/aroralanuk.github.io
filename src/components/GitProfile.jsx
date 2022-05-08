@@ -238,6 +238,7 @@ GitProfile.propTypes = {
       dribbble: PropTypes.string,
       behance: PropTypes.string,
       medium: PropTypes.string,
+      mirror: PropTypes.string,
       dev: PropTypes.string,
       website: PropTypes.string,
       phone: PropTypes.string,
